@@ -12,6 +12,8 @@
 */
 
 Route::get('/', function () {
+
+    throw new Exception('asdasd');
     return view('welcome');
 });
 
