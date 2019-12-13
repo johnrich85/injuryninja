@@ -7,3 +7,7 @@ PHPStorm needs to be configured to use the docker php version via the PHPStorm d
 PHPStorm needs to be configured to listen on port 9001 for xdebug
 PHPStorm needs to be configured to use DBGp proxy for the host machine and port 9001
 Mapping needs to be configured
+
+
+
+https://github.com/cretueusebiu/laravel-vue-spa/
