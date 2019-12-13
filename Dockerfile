@@ -16,7 +16,6 @@ RUN apk add --no-cache $PHPIZE_DEPS \
     && pecl install xdebug-2.7.0 \
     && docker-php-ext-enable xdebug
 
-
 RUN echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini \
     && echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/xdebug.ini \
     && echo "xdebug.remote_port=9001" >> /usr/local/etc/php/conf.d/xdebug.ini \
