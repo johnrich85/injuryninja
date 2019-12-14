@@ -9,7 +9,8 @@ function page (path) {
 }
 
 export default [
-    { path: '/', name: 'welcome', component: page('welcome.vue') },
+    { path: '/', name: 'welcome', component: page('Welcome.vue') },
+    { path: '/register', name: 'register', component: page('Register.vue') },
 
     { path: '*', component: page('errors/404.vue') }
 ]
