@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/build/tailwind.css">
+    <script src="chartsjs/Chart.js"></script>
+    <title>Injury Ninja</title>
+</head>
+<body class="antialiased">
+<div class="relative bg-gray-200">
+    <div class="absolute inset-0 flex flex-col" aria-hidden="true">
+        <div class="flex-1 bg-grey-100"></div>
+    </div>
+
+    <div class="relative mx-auto sm:max-w-full lg:max-w-6xl">
+        <div class="flex flex-col min-h-screen justify-center w-2/3 mx-auto">
+            <p class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-3 flex justify-end">Step 2/2</p>
+
+            <div class="bg-gray-100 px-16 py-12 shadow text-gray-700 md:flex md:flex-row justify-between">
+                <div class="w-full md:w-3/5 md:mr-16">
+                    <h1 class="font-display flex text-green-600 mb-4">
+                        <svg width="30px"
+                             preserveAspectRatio="x350Y300 meet"
+                             viewBox="0 0 350 300"
+                             xmlns="http://www.w3.org/2000/svg" class="fill-current">
+                            <g>
+                                <path stroke="null" id="svg_1"
+                                      d="m429,485l0,-41.6l0,41.6zm-416,-272c27.3,0 51.8,-11.5 69.2,-29.7c15.1,53.9 64,93.7 122.8,93.7c70.7,0 128,-57.3 128,-128s-57.3,-128 -128,-128c-50.4,0 -93.6,29.4 -114.5,71.8c-17.4,-24 -45.5,-39.8 -77.5,-39.8c0,33.4 17.1,62.8 43.1,80c-26,17.2 -43.1,46.6 -43.1,80zm144,-96l96,0c17.7,0 32,14.3 32,32l-160,0c0,-17.7 14.3,-32 32,-32z"/>
+                            </g>
+                        </svg>
+
+                        <span class="ml-2 tracking-tighter">
+                  <span class="font-bold text-gray-800">Injury </span><span class="font-bold">Ninja</span>
+                </span>
+                    </h1>
+                    <p class="text-sm font-body leading-relaxed mb-4">Register a new account</p>
+                </div>
+
+                <form class="w-full max-w-lg" method="GET" action="/dashboard.html">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                                Date of birth *
+                            </label>
+                            <div class="relative">
+                                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <option>1985</option>
+                                    <option>1986</option>
+                                    <option>1987</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                                Sports *
+                            </label>
+                            <!-- Todo - allow multi -->
+                            <div class="relative">
+                                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <optgroup label="Climbing">
+                                        <option>Bouldering</option>
+                                        <option>Sport</option>
+                                    </optgroup>
+                                    <option value="">Running</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
+                                City
+                            </label>
+                            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Albuquerque">
+                        </div>
+
+                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                                Country
+                            </label>
+                            <div class="relative">
+                                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <option>United kingdom</option>
+                                    <option>United States</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button class="btn btn-secondary mr-4" type="submit">Cancel</button>
+                        <button class="btn" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

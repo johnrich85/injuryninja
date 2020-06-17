@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-xxs {
+    font-size:0.65rem;
+}
+.text-xxxs {
+    font-size:0.45rem;
+}
+.h-72 {
+    height: 19rem;
+}
+
+.overflow-container {
+    margin-left:-2%;
+    width:104%;
+}
+
+.trend > div > div {
+    widtH:63px;
+}
+
+
+.btn {
+    @apply bg-orange-500;
+    @apply text-orange-100;
+    @apply font-semibold;
+    @apply py-2;
+    @apply px-4;
+    @apply border-b-4;
+    @apply border-orange-600;
+    @apply rounded;
+    @apply cursor-pointer;
+}
+
+.btn:hover {
+    @apply bg-orange-400;
+    @apply border-orange-600;
+}
+
+.btn:active {
+    @apply mt-1;
+    @apply border-b;
+}
+
+.btn-secondary {
+    @apply bg-gray-300;
+    @apply border-gray-500;
+    @apply text-gray-600;
+}
+
+.btn-secondary:hover {
+    @apply bg-gray-100;
+    @apply border-gray-500;
+}
+
+.feature-text {
+    @apply font-bold;
+    @apply uppercase;
+    @apply font-sans;
+    @apply mb-1;
+    @apply text-gray-600;
+}
+
+.secondary-feature-text {
+    @apply font-bold;
+    @apply font-sans;
+    @apply mb-1;
+    @apply text-gray-600;
+}

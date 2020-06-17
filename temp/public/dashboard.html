@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/build/tailwind.css">
+    <script src="chartsjs/Chart.js"></script>
+    <title>Injury Ninja</title>
+</head>
+<body class="antialiased">
+<div class="relative">
+    <div class="absolute inset-0 flex flex-col" aria-hidden="true">
+        <div class="flex-1 bg-gray-200"></div>
+    </div>
+
+    <div class="relative mx-auto sm:max-w-full lg:max-w-6xl">
+        <div class="flex flex-col min-h-screen w-11/12 mx-auto">
+            <div class="flex justify-between mb-6 mt-12">
+                <div class="flex items-center">
+                    <h1 class="font-display flex items-center justify-center text-green-600">
+                        <svg width="30px"
+                             preserveAspectRatio="x350Y300 meet"
+                             viewBox="0 0 350 300"
+                             xmlns="http://www.w3.org/2000/svg" class="fill-current">
+                            <g>
+                                <path stroke="null" id="svg_1" d="m429,485l0,-41.6l0,41.6zm-416,-272c27.3,0 51.8,-11.5 69.2,-29.7c15.1,53.9 64,93.7 122.8,93.7c70.7,0 128,-57.3 128,-128s-57.3,-128 -128,-128c-50.4,0 -93.6,29.4 -114.5,71.8c-17.4,-24 -45.5,-39.8 -77.5,-39.8c0,33.4 17.1,62.8 43.1,80c-26,17.2 -43.1,46.6 -43.1,80zm144,-96l96,0c17.7,0 32,14.3 32,32l-160,0c0,-17.7 14.3,-32 32,-32z"/>
+                            </g>
+                        </svg>
+
+                        <span class="ml-2 tracking-tighter">
+                    <span class="font-bold text-gray-800">Injury </span><span class="font-bold">Ninja</span>
+                  </span>
+                    </h1>
+                </div>
+
+                <div class="flex items-center cursor-pointer">
+                    <div>
+                        <img class="h-10 w-10 rounded-full"
+                             src="https://www.biography.com/.image/t_share/MTE5NDg0MDU1MTIyMTE4MTU5/arnold-schwarzenegger-9476355-1-402.jpg"/>
+                    </div>
+                    <div class="ml-4 flex-1">
+                        <div class="flex justify-between items-center">
+                            <p class="text-grey-darkest">
+                                Arnie
+                            </p>
+                            <p class="text-xs text-grey-darkest ml-1">
+                                <img src="./zondicons/cheveron-down.svg" width="18px"/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="md:flex md:flex-row-reverse">
+               <!-- Content-->
+               <div class="pl-12 text-gray-700 md:w-9/12 border-l border-white">
+                   <div class="flex justify-start bg-gray-100 px-12 py-8 mb-16">
+                       <div class="w-2/6 pr-4">
+                           <img class=""
+                                src="/welcome.svg"/>
+                       </div>
+                       <div class="w-4/6 pl-12 flex">
+                           <div class="flex flex-1 flex-col justify-between">
+                               <div>
+                                   <p class="text-grey-darkest text-4xl font-sans tracking-tighter mb-2 font-semibold">
+                                       Welcome back Arnie
+                                   </p>
+
+                                   <p class="feature-text">You are currently tracking 0 injuries.</p>
+                               </div>
+
+                               <div class="flex justify-between items-center">
+                                    <div class="btn btn-secondary">
+                                        <i class="fa fa-plus mr-2"> </i> Add an injury
+                                    </div>
+
+                                   <div class="font-sans text-sm cursor-pointer">
+                                       Complete your profile <i class="fa fa-chevron-down text-xs ml-2"></i>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div class="mb-16">
+                       <h3 class="feature-text pb-4">Recent injuries</h3>
+
+                       <div class="flex justify-between">
+                           <div class="rounded shadow-md bg-white w-1/2 pt-6 pb-0 cursor-pointer">
+                               <div class="px-6">
+                                   <div class="text-xl tracking-tight text-gray-700 mb-3 flex justify-between items-center">
+                                       <span>Tennis elbow</span>
+
+                                       <div class="rounded-full w-3 h-3 bg-green-500 border border-green-600"></div>
+                                   </div>
+
+                                   <p class="feature-text text-xs pb-4"> <i class="fa fa-clock text-gray-500 mr-1"></i> 2 weeks ago</p>
+                               </div>
+
+                               <div class="flex justify-between items-center text-sm text-gray-600 bg-gray-300 py-3 px-6">
+                                   <a href=""><i class="fa fa-plus text-xs mr-1"></i> Log activity</a>
+                                   <a href=""> I'm healed - close this</a>
+                               </div>
+                           </div>
+
+                           <div class="rounded shadow-md bg-white w-1/2 pt-6 pb-0 cursor-pointer ml-5">
+                               <div class="px-6">
+                                   <div class="text-xl tracking-tight text-gray-700 mb-3 flex justify-between items-center">
+                                       <span>Trigger Finger</span>
+
+                                       <div class="rounded-full w-3 h-3 bg-orange-700 border border-orange-800"></div>
+                                   </div>
+
+                                   <p class="feature-text text-xs pb-4"> <i class="fa fa-clock text-gray-500 mr-1"></i> 6 months ago</p>
+
+                               </div>
+
+                               <div class="flex justify-end items-center text-sm text-gray-600 border-t bg-gray-300 py-3 px-6">
+                                   <a href=""><i class="fa fa-history text-xs mr-1"></i> View history</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+                   <div>
+                       <h3 class="feature-text pb-4 flex justify-between">
+                           Other injuries
+
+                           <a href="#"
+                              title="Add a new injury"
+                              class="flex items-center justify-center rounded-full bg-gray-700 text-white shadow-md h-6 w-6">
+                               <i class="fa fa-plus text-xs"></i>
+                           </a>
+                       </h3>
+
+                       <table class="table-auto w-full rounded">
+                            <thead>
+                                <td class="px-5 py-4 feature-text text-xs bg-gray-400 rounded-tl">
+                                    Injury
+                                </td>
+
+                                <td class="px-5 py-4 feature-text text-xs bg-gray-400">
+                                    Added
+                                </td>
+
+                                <td class="px-5 py-4 feature-text text-xs bg-gray-400">
+                                    Healed in
+                                </td>
+
+                                <td class="px-5 py-4 feature-text text-xs bg-gray-400 rounded-tr">
+                                    <i class="fa fa-el">
+                                </td>
+                            </thead>
+
+                           <tbody>
+                              <tr>
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight">
+                                      <a class="block py-1" href="">Trigger finger</a>
+                                      <div class="flex items-center text-xs secondary-feature-text">
+                                          <div class="rounded-full w-3 h-3 bg-orange-700 border border-orange-800 mr-3"></div>
+                                          Inactive or healed
+                                      </div>
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight text-sm">
+                                      <i class="fa fa-clock text-gray-500 mr-2"></i> 1 year ago
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight text-sm">
+                                      <i class="fa fa-clock text-gray-500 mr-2"></i>  3 months
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white">
+                                      <div class="tracking-widest text-gray-600">
+                                          <a href=""><i class="fa fa-pen"></i></a>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight">
+                                      <a class="block py-1" href="">Golfers elbow</a>
+                                      <div class="flex items-center text-xs secondary-feature-text">
+                                          <div class="rounded-full w-3 h-3 bg-green-500 border border-green-600 mr-2"></div>
+                                          In rehab
+                                      </div>
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight text-sm">
+                                      <i class="fa fa-clock text-gray-500 mr-2"></i> 2 months ago
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight text-sm">
+                                      <span><i class="fa fa-clock text-gray-500 mr-2 mb-"></i>  9 weeks</span>
+                                      <div class="flex items-center text-xs secondary-feature-text mt-1">
+                                          And counting...
+                                      </div>
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white">
+                                      <div class="tracking-widest text-gray-600">
+                                          <a href=""><i class="fa fa-pen"></i></a>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight">
+                                      <a class="block py-1" href="">Trigger finger</a>
+                                      <div class="flex items-center text-xs secondary-feature-text">
+                                          <div class="rounded-full w-3 h-3 bg-orange-700 border border-orange-800 mr-3"></div>
+                                          Inactive or healed
+                                      </div>
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight text-sm">
+                                      <i class="fa fa-clock text-gray-500 mr-2"></i> 4 years ago
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white text-gray-800 tracking-tight text-sm">
+                                      <i class="fa fa-clock text-gray-500 mr-2"></i>  3 months
+                                  </td>
+
+                                  <td class="px-5 py-4 bg-white">
+                                      <div class="tracking-widest text-gray-600">
+                                          <a href=""><i class="fa fa-pen"></i></a>
+                                      </div>
+                                  </td>
+                              </tr>
+                           </tbody>
+                       </table>
+                   </div>
+               </div>
+
+               <!--Sidebar-->
+               <div class="w-full md:w-3/12 text-left bottom-0 h-16 md:h-screen border-r border-gray-400">
+                   <div class="md:relative mx-auto">
+                       <ul class="list-reset flex flex-row md:flex-col text-center md:text-left">
+                           <li class="mr-3 flex-1 mb-4">
+                               <a href="#" class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-500 font-sans">
+                                   <i class="fas fa-user pr-0 md:w-2/12 md:mr-1"></i>
+                                   <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-700 hover:text-gray-700">Account</span>
+                               </a>
+
+                               <ul class="ml-10 text-gray-600 mt-1">
+                                   <li class="text-sm font-serif mb-2 hover:text-green-600 cursor-pointer">Update profile</li>
+                                   <li class="text-sm font-serif mb-2 hover:text-green-600 cursor-pointer">Update password</li>
+                               </ul>
+                           </li>
+
+                           <li class="mr-3 flex-1">
+                               <a href="#" class="block py-1 md:py-3 pl-1 align-middle text-gray-500 no-underline hover:text-gray-500 font-sans">
+                                   <i class="fas fa-medkit pr-0 md:w-2/12 md:mr-1"></i>
+                                   <span class="pb-1 md:pb-0 text-xs md:text-base text-gray-700 hover:text-gray-700">Injuries</span>
+                               </a>
+
+                               <ul class="ml-10 text-gray-600 mt-1">
+                                   <li class="text-sm font-serif mb-2 hover:text-green-600 cursor-pointer">Add</li>
+                                   <li class="text-sm font-serif mb-2 hover:text-green-600 cursor-pointer">Manage</li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
