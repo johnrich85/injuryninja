@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.5.1",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "tailwindcss": "^1.0"
   },
   "devDependencies": {
